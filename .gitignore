@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+
+# --- OS / Editor files ---
+.DS_Store
+Thumbs.db
+
+# --- Data files (raw and processed) ---
+data/*.csv
+data/*.json
+db/*.db
+
+# --- Logs ---
+logs/*.log
+
+# --- Models ---
+models/*.pkl
+models/*.pickle
+
+# --- Environment files ---
+.env
+*.env
+
+# --- Unused old code ---
+unused/
+
+# --- Others ---
+*.bat
