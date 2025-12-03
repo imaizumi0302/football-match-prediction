@@ -45,49 +45,46 @@ soccer_pipeline/
 1. 必要なパッケージのインストール
 ```
 pip install -r "requirements.txt"
-
 ```
 
 2. データベース準備
 ```
 db/matches.db が存在することを確認してください。
 存在しない場合は、CSV データからインポートしてください。
-
 ```
+
 3. スクリプト実行
 ```
 python src/prediction_pipeline1.py
-
 ```
 
 4. Jupyter Notebook 実行
 ```
 jupyter notebook notebooks/processed_notebook.ipynb
-
 ```
 
 ## 出力結果
 
-data/processed_data.csv : 前処理後のデータ
+・data/processed_data.csv : 前処理後のデータ
 
-data/latest_predictions.json : Streamlit 用の予測結果 JSON
+・data/latest_predictions.json : Streamlit 用の予測結果 JSON
 
-prediction : 予測結果 (H: ホーム勝利, D: 引き分け, A: アウェイ勝利)
+・prediction : 予測結果 (H: ホーム勝利, D: 引き分け, A: アウェイ勝利)
 
-confidence : 予測の信頼度
+・confidence : 予測の信頼度
 
-logs/ : 実行ログ
+・logs/ : 実行ログ
 
 ## 今後の改善点
 
-モデルの精度向上（特徴量追加、ハイパーパラメータ調整）
+・モデルの精度向上（特徴量追加、ハイパーパラメータ調整）
 
-Streamlit ダッシュボードの UI 改善
+・Streamlit ダッシュボードの UI 改善
 
-リアルタイムデータ取得への対応
+・リアルタイムデータ取得への対応
 
 ## 注意点
 
-DB_PATH や SEASON_DATA_PATH はスクリプト内で絶対パスを設定してください
+・DB_PATH や SEASON_DATA_PATH はスクリプト内で絶対パスを設定してください
 
-GitHub にアップロードする際は .gitignore で不要ファイルを除外しています
+・GitHub にアップロードする際は .gitignore で不要ファイルを除外しています
