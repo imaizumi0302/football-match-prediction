@@ -37,8 +37,13 @@ MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
 # --------------------------------------------------------
 
 #モデル学習に使用する特徴量の選択
+# FEATURES = ["home_team","away_team",'home_season_wins_ave_overall',
+#        'away_season_wins_ave_overall','home_last_points','away_last_points']
+
 FEATURES = ["home_team","away_team",'home_season_wins_ave_overall',
-       'away_season_wins_ave_overall','home_last_points','away_last_points']
+            'away_season_wins_ave_overall','home_last_points','away_last_points',
+            'home_last_gd','away_last_gd','home_recent_10_goal_diff',
+            'away_recent_10_goal_diff','points_difference']
 
 TARGET = "target"
 
