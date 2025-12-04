@@ -77,7 +77,6 @@ soccer_pipeline/
 pip install -r "requirements.txt"
 ```
 
-<<<<<<< HEAD
 2. データベース準備
 db/matches.db が存在することを確認してください。
 存在しない場合は、CSV データからインポートしてください。
@@ -118,7 +117,6 @@ streamlit run src/app.py
 
 ## 出力結果
 
-<<<<<<< HEAD
 ・data/processed_data.csv : 前処理後のデータ
 
 ・data/latest_predictions.json : Streamlit 用の予測結果 JSON
@@ -190,4 +188,3 @@ streamlit run src/app.py
 詳細は [LICENSE](./LICENSE) ファイルをご覧ください。
 
 
->>>>>>> 0c37265 (Update README)
